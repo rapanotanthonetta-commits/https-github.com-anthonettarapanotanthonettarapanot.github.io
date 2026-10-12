@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+     
+    <body style="background-image: url('background.jpg'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; background-position: center;">
+    <style>
+
+
+
+        :root {
+            --bg-color: #08080a;
+            --card-bg: #111115;
+            --text-color:#ff92d3;
+            --accent-color: #fd0098;
+            --muted-color: #ff92d3;
+            --border-subtle: rgba(255, 255, 255, 0.08);
+            --font-family: 'Inter', sans-serif;
+            --font-mono: 'Space Mono', monospace;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: var(--font-family);
+        }
+
+        .font-mono {
+            font-family: var(--font-mono);
+        }
+
+        .accent-text { color: var(--accent-color); }
+        .accent-border { border-color: var(--accent-color); }
+
+        ::-webkit-scrollbar { width: 4px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: var(--border-subtle); border-radius: 2px; }
+        ::-webkit-scrollbar-thumb:hover { background: var(--muted-color); }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between max-w-2xl mx-auto px-6 py-12 sm:py-20 font-light tracking-normal leading-relaxed">
+<p><img src="profile.jpg" alt="Profile" style="width: 120px; height: 120px; border-radius: 50%; vertical-align: middle; margin-right: 8px;"> </p>
+    <main class="space-y-16">
+
+        <section class="space-y-6">
+            <div class="space-y-2">
+                <div class="text-xs font-mono uppercase tracking-widest text-zinc-500 mb-2">Portfolio</div>
+                <h1 class="text-3xl sm:text-4xl font-normal tracking-tight text-zinc-100">
+                    Anthonetta P. Rapanot
+                </h1>
+                <p class="text-xs font-mono tracking-wide accent-text">
+                    Software developer
+                </p>
+            </div>
+
+            <p class="text-sm sm:text-base leading-relaxed text-zinc-400">
+                Crafting quiet, purposeful digital interfaces with clean code and rigorous attention to detail. Focused on accessibility, performance, and refined web systems.
+            </p>
+        </section>
+
+        <section class="space-y-6">
+            <h2 class="text-xs uppercase tracking-widest font-mono text-zinc-500">Focus & Skills</h2>
+
+            <div class="flex flex-wrap gap-x-6 gap-y-3 text-sm text-zinc-300">
+                <span class="hover:text-sky-400 transition-colors">Frontend Architecture</span>
+                <span class="text-zinc-600">/</span>
+                <span class="hover:text-sky-400 transition-colors">UI/UX Systems</span>
+                <span class="text-zinc-600">/</span>
+                <span class="hover:text-sky-400 transition-colors">TypeScript</span>
+                <span class="text-zinc-600">/</span>
+                <span class="hover:text-sky-400 transition-colors">Tailwind CSS</span>
+                <span class="text-zinc-600">/</span>
+                <span class="hover:text-sky-400 transition-colors">Performance Optimization</span>
+                <span class="text-zinc-600">/</span>
+                <span class="hover:text-sky-400 transition-colors">Design Systems</span>
+            </div>
+        </section>
+
+        <section class="space-y-6">
+            <h2 class="text-xs uppercase tracking-widest font-mono text-zinc-500">Selected Projects</h2>
+
+            <div class="space-y-6">
+                <div class="group pb-6 border-b border-zinc-800/80 space-y-2">
+                    <div class="flex items-center justify-between text-sm">
+                        <div class="flex items-center gap-2">
+                            <a href="#" class="hover:text-sky-400 font-medium text-zinc-200 transition-colors">Minimalist Design System</a>
+                            <span class="text-[11px] font-mono text-zinc-500">/ UI Architect</span>
+                        </div>
+                        <span class="text-xs font-mono text-zinc-500">2026</span>
+                    </div>
+                    <p class="text-xs sm:text-sm leading-relaxed text-zinc-400">
+                        A lightweight design system constructed with modern CSS variables, accessible components, and zero unnecessary dependencies.
+                    </p>
+                </div>
+
+                <div class="group pb-6 border-b border-zinc-800/80 space-y-2">
+                    <div class="flex items-center justify-between text-sm">
+                        <div class="flex items-center gap-2">
+                            <a href="#" class="hover:text-sky-400 font-medium text-zinc-200 transition-colors">Interactive Web Artifacts</a>
+                            <span class="text-[11px] font-mono text-zinc-500">/ Frontend Lead</span>
+                        </div>
+                        <span class="text-xs font-mono text-zinc-500">2025</span>
+                    </div>
+                    <p class="text-xs sm:text-sm leading-relaxed text-zinc-400">
+                        Explorations in dynamic layout algorithms, responsive typography systems, and web accessibility standards.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="space-y-4">
+            <h2 class="text-xs uppercase tracking-widest font-mono text-zinc-500">Contact</h2>
+            <div>
+                <a href="mailto:anthonetta@gmail.com" class="inline-flex items-center gap-2 text-sm sm:text-base text-zinc-200 hover:text-sky-400 transition-colors group">
+                    <span>anthonetta@gmail.com</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square text-xs opacity-50 group-hover:opacity-100 transition-opacity"></i>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="mt-20 pt-6 border-t border-zinc-800/60 flex items-center justify-between text-[11px] text-zinc-500 font-mono">
+        <span>© 2026 Anthonetta P. Rapanot</span>
+    </footer>
+
+</body>
+</html>
